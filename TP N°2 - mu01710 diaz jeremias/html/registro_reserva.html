@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Reserva</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Registro de Reserva</h1>
+        <form action="registro_reserva.html" method="post">
+            <fieldset disabled>
+                <label for="origen">Origen:</label>
+                <input type="text" id="origen" name="origen" class="form-control"><br>
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" class="form-control"><br>
+                <label for="fecha_vuelo">Fecha de vuelo:</label>
+                <input type="date" id="fecha_vuelo" name="fecha_vuelo" class="form-control"><br>
+                <label for="hora_vuelo">Hora de vuelo:</label>
+                <input type="time" id="hora_vuelo" name="hora_vuelo" class="form-control"><br>
+            </fieldset>
+            
+            <label>Clase:</label><br>
+            <input type="radio" id="ejecutiva" name="clase" value="ejecutiva">
+            <label for="ejecutiva">Ejecutiva</label>
+            <input type="radio" id="economica" name="clase" value="economica" checked>
+            <label for="economica">Económica</label><br><br>
+
+            <label for="cantidad_pasajes">Cantidad de Pasajes:</label>
+            <input type="number" id="cantidad_pasajes" name="cantidad_pasajes" min="1" max="50" class="form-control" required><br>
+
+            <label for="ubicacion">Ubicación:</label>
+            <select id="ubicacion" name="ubicacion" class="form-control">
+                <option value="ventanilla">Ventanilla</option>
+                <option value="centro">Centro</option>
+                <option value="pasillo">Pasillo</option>
+            </select><br>
+
+            <label for="nro_silla">Nro de Silla:</label>
+            <input type="number" id="nro_silla" name="nro_silla" min="1" max="50" class="form-control"><br>
+
+            <label for="apellido_nombre">Apellido y Nombre:</label>
+            <input type="text" id="apellido_nombre" name="apellido_nombre" maxlength="100" class="form-control" required><br>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" pattern="\d{8}" class="form-control" required><br>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" class="form-control"><br>
+
+            <label>Sexo:</label><br>
+            <input type="radio" id="femenino" name="sexo" value="F">
+            <label for="femenino">F</label>
+            <input type="radio" id="masculino" name="sexo" value="M">
+            <label for="masculino">M</label><br><br>
+
+            <button type="reset" class="btn btn-secondary">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Aceptar</button>
+        </form>
+
+        <footer>
+            Sitio Oficial de Compañía Argentina-2024
+        </footer>
+    </div>
+</body>
+</html>

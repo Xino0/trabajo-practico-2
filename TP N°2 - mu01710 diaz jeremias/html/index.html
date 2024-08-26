@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Vuelos</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compañía Argentina</h1>
+        <h2>Gestión de Vuelos</h2>
+        
+        <nav>
+            <ul>
+                <li><a href="#registrar_usuario">Registrar usuario</a></li>
+                <li><a href="#consultar_vuelos">Consultar vuelos disponibles/reservar</a></li>
+                <li><a href="#ver_reservas">Ver reservas realizadas</a></li>
+                <li><a href="#eliminar_reservas">Eliminar reservas realizadas</a></li>
+            </ul>
+        </nav>
+        
+        <h3>Consultar Vuelos Disponibles</h3>
+        <form action="registro_reserva.html" method="post">
+            <label for="origen">Origen:</label>
+            <select id="origen" name="origen" class="form-control">
+                <option value="cordoba">Córdoba</option>
+                <option value="mendoza">Mendoza</option>
+                <option value="tucuman">Tucumán</option>
+            </select><br>
+            
+            <label for="destino">Destino:</label>
+            <select id="destino" name="destino" class="form-control">
+                <option value="cordoba">Córdoba</option>
+                <option value="mendoza">Mendoza</option>
+                <option value="tucuman">Tucumán</option>
+            </select><br>
+            
+            <label for="fecha_vuelo">Fecha de vuelo:</label>
+            <input type="date" id="fecha_vuelo" name="fecha_vuelo" class="form-control"><br>
+            
+            <button type="reset" class="btn btn-secondary">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+        
+        <footer>
+            Sitio Oficial de Compañía Argentina-2017
+        </footer>
+    </div>
+</body>
+</html>
